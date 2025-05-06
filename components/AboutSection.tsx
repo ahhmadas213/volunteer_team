@@ -5,16 +5,6 @@ import React from 'react';
 import ValueCard from './ValueCard';
 import { motion } from 'framer-motion';
 
-// --- Animation Variants (keep as they are) ---
-const sectionVariants = { // ... (no changes needed here)
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
 const leftColVariants = { // ... (no changes needed here)
   hidden: { opacity: 0, x: -50 },
   visible: {

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Initiative } from '@/types';
+import { BasicInitiative } from '@/types';
 import { initiativesData } from '@/data/initiativesData';
 
 const InitiativesPage = () => {
@@ -50,7 +50,7 @@ const InitiativesPage = () => {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200 text-near-black">
-              {initiativesData.map((initiative: Initiative, index: number) => (
+              {initiativesData.map((initiative: BasicInitiative, index: number) => (
                 <motion.tr
                   key={`${initiative.initiative_name}-${index}-desktop`}
                   initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const InitiativesPage = () => {
 
         {/* Mobile Card View */}
         <div className="md:hidden space-y-6">
-          {initiativesData.map((initiative: Initiative, index: number) => (
+          {initiativesData.map((initiative: BasicInitiative, index: number) => (
             <motion.div
               key={`${initiative.initiative_name}-${index}-mobile`}
               initial={{ opacity: 0, x: -20 }}

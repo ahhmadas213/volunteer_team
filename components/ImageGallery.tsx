@@ -61,7 +61,7 @@ const HorizontalGalleryScroll = () => {
       if (newIndex < 0) return galleryImages.length - 1;
       return newIndex;
     });
-  }, [galleryImages.length]);
+  }, []);
 
   // Auto-play logic
   useEffect(() => {
