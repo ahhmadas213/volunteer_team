@@ -121,8 +121,8 @@ const Footer = () => {
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()} فريق خادم ضيف الرحمن. جميع الحقوق محفوظة.
             {/* Optional: Add credits */}
-            {/* <span className="mx-2">|</span>
-            <a href="#" className="hover:text-white">تصميم وبرمجة س</a> */}
+            <span className="mx-2">|</span>
+            <Link href="https://abiu.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white text-muted-purple">تصميم وبرمجة  ABIU</Link>
           </p>
         </div>
       </div>

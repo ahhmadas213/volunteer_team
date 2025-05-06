@@ -159,13 +159,13 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button
-                className="!py-2 !px-5 !text-base"
-              >
-                <Link href="/contact">
+              <Link href="/contact">
+                <Button
+                  className="!py-2 !px-5 !text-base"
+                >
                   تواصل معنا
-                </Link>
-              </Button>
+                </Button>
+              </Link>
 
             </motion.div>
           </nav>
@@ -292,9 +292,8 @@ const Header = () => {
                 className=""
                 onClick={toggleMenu}
               >
-                <Link href={"/contact"}>
-                  تواصل معنا
-                </Link>
+
+                تواصل معنا
               </Button>
 
             </Link>
